@@ -6,8 +6,14 @@ void main() {
   setUp(() {
     _calculator = Calculator();
   });
-  test(
-    'calculator.sumTwonNumber() sum both number',
-    () => expect(_calculator.sumTwoNumber(5, 5), 10),
-  );
+  group('calculator test', () {
+    test(
+      'calculator.sumTwonNumber() sum both number',
+      () => expect(_calculator.sumTwoNumber(5, 5), 10),
+    );
+    test(
+      'calculator.sumTwonNumber() sum both number',
+      () => expect(_calculator.sumTwoNumber(1, 5), 6),
+    );
+  });
 }
