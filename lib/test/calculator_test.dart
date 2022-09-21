@@ -1,0 +1,13 @@
+import 'package:test/test.dart';
+import 'package:unit_test1/math/calculator.dart';
+
+void main() {
+  late Calculator _calculator;
+  setUp(() {
+    _calculator = Calculator();
+  });
+  test(
+    'calculator.sumTwonNumber() sum both number',
+    () => expect(_calculator.sumTwoNumber(5, 5), 10),
+  );
+}
